@@ -1,0 +1,249 @@
+@font-face {
+  font-family: gilroy-medium;
+  src: url("../Gilroy-Font/Gilroy Font/Gilroy-Medium.ttf") format("truetype"), url("../Gilroy-Font/Gilroy Font/Gilroy-Medium.woff") format("woff"), url("../Gilroy-Font/Gilroy Font/Gilroy-Medium.eot");
+}
+
+@font-face {
+  font-family: gilroy-bold;
+  src: url("../Gilroy-Font/Gilroy Font/Gilroy-Bold.ttf") format("truetype"), url("../Gilroy-Font/Gilroy Font/Gilroy-Bold.woff") format("woff"), url("../Gilroy-Font/Gilroy Font/Gilroy-Bold.eot");
+}
+
+@font-face {
+  font-family: gilroy-semibold;
+  src: url("../Gilroy-Font/Gilroy Font/Gilroy-SemiBold.ttf") format("truetype"), url("../Gilroy-Font/Gilroy Font/Gilroy-SemiBold.woff") format("woff"), url("../Gilroy-Font/Gilroy Font/Gilroy-SemiBold.eot");
+}
+
+@font-face {
+  font-family: gilroy-regular;
+  src: url("../Gilroy-Font/Gilroy Font/Gilroy-regular.ttf") format("truetype"), url("../Gilroy-Font/Gilroy Font/Gilroy-regular.woff") format("woff"), url("../Gilroy-Font/Gilroy Font/Gilroy-regular.eot");
+}
+
+body {
+  font-family: Gilroy-regular;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.icon-btns {
+  background-color: #161616;
+  color: white;
+  width: 200px;
+  border: 1px solid rgba(136, 136, 136, 0.3);
+  /* for Safari */
+  background-clip: padding-box;
+  border-radius: 7px;
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.icon-btns:hover, .icon-btns:focus {
+  background-color: white;
+  color: black;
+}
+
+.icon-btns:hover .change, .icon-btns:focus .change {
+  stroke: black !important;
+  background-color: aqua;
+}
+
+.regular {
+  font-family: Gilroy-regular;
+}
+
+.medium {
+  font-family: Gilroy-medium;
+}
+
+.semibold {
+  font-family: Gilroy-semibold;
+}
+
+.bold {
+  font-family: Gilroy-bold;
+}
+
+object {
+  pointer-events: none;
+}
+
+.container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "sidebar main";
+  width: 98%;
+  height: calc(100vh - 40px);
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar .logo {
+  width: 190px;
+}
+
+.sidebar div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar .log-out {
+  background-color: black;
+  margin-top: auto;
+  color: white;
+  font-size: 1rem;
+}
+
+.sidebar .log-out button {
+  display: flex;
+  align-items: center;
+  border-color: transparent;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.sidebar span {
+  margin-bottom: -10px;
+}
+
+.main {
+  grid-area: main;
+  box-sizing: border-box;
+}
+
+.main-head {
+  margin-top: 3rem;
+}
+
+.main-head h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.main-head span, .main-head p {
+  margin: 0;
+  color: #707070;
+}
+
+.main-head p {
+  font-size: 1.25rem;
+}
+
+.main-head span {
+  font-size: 1rem;
+}
+
+.main-head .bold {
+  display: inline;
+}
+
+.main-head div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-head .blue-btc {
+  background-color: #B8F1FF;
+  display: inline-block;
+  font-family: Gilroy-bold;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.main-head .blue-btc span {
+  color: black !important;
+}
+
+.card-field {
+  margin-top: 1.75rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.card div {
+  position: relative;
+  background-color: #161616;
+  padding: 1.2rem;
+  border: 1px solid rgba(136, 136, 136, 0.3);
+  border-radius: 7px;
+}
+
+.card .stock {
+  font-size: 0.75rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #707070;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  opacity: 0.6;
+  font-size: 1rem;
+}
+
+.card .buy-btn {
+  background-color: #121212;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid rgba(136, 136, 136, 0.3);
+  border-radius: 7px;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: 1.5rem;
+}
+
+.card .count-div {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .count {
+  font-size: 1rem;
+  background-color: rgba(217, 217, 217, 0.13);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
