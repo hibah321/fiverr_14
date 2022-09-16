@@ -79,7 +79,6 @@ input[type='text'] {
 
 input[type='text']:focus {
   outline: none;
-  width: 335px;
 }
 
 input[type='text']::placeholder {
