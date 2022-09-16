@@ -482,5 +482,8 @@ object {
   .bitcoin-cards {
     margin-inline: auto;
   }
+  .main {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
