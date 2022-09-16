@@ -57,7 +57,7 @@ body{
 .icon-btns{
     background-color: $color-grey;
     color: white;
-    width: 200px;
+    width: 220px;
     border: 1px solid $color-light-grey;
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box;
@@ -236,6 +236,9 @@ object{
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
+    .icon-btns{
+        width: 200px;
+    }
 }
 .card{
     box-sizing: border-box;
@@ -280,6 +283,7 @@ object{
         padding: 0.75rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .count{
         font-size: 1rem;
@@ -287,7 +291,8 @@ object{
         color: white;
         border: 1px solid transparent;
         border-radius: 50%;
-        width: 20px;
+        
+        padding: 4px 8px;
         cursor: pointer;
     }
 }
@@ -442,6 +447,12 @@ object{
         h1 , p{
             margin-left: 0;
         }
+    }
+    .card-field .icon-btns{
+        width: 250px;
+    }
+    .card{
+        width: 250px;
     }
     .bitcoin-cards{
         margin-inline: auto;

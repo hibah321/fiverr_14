@@ -40,7 +40,7 @@ body {
 .icon-btns {
   background-color: #161616;
   color: white;
-  width: 200px;
+  width: 220px;
   border: 1px solid rgba(136, 136, 136, 0.3);
   /* for Safari */
   background-clip: padding-box;
@@ -244,6 +244,10 @@ object {
   margin-bottom: 1rem;
 }
 
+.card-field .icon-btns {
+  width: 200px;
+}
+
 .card {
   box-sizing: border-box;
   width: 200px;
@@ -293,6 +297,7 @@ object {
   padding: 0.75rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card .count {
@@ -301,7 +306,7 @@ object {
   color: white;
   border: 1px solid transparent;
   border-radius: 50%;
-  width: 20px;
+  padding: 4px 8px;
   cursor: pointer;
 }
 
@@ -467,6 +472,12 @@ object {
   }
   .cash-main h1, .cash-main p {
     margin-left: 0;
+  }
+  .card-field .icon-btns {
+    width: 250px;
+  }
+  .card {
+    width: 250px;
   }
   .bitcoin-cards {
     margin-inline: auto;
